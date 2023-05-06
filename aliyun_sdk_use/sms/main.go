@@ -34,7 +34,7 @@ func CreateClient (accessKeyId *string, accessKeySecret *string) (_result *dysms
 
 func _main (args []*string) (_err error) {
 	// 工程代码泄露可能会导致AccessKey泄露，并威胁账号下所有资源的安全性。以下代码示例仅供参考，建议使用更安全的 STS 方式，更多鉴权访问方式请参见：https://help.aliyun.com/document_detail/378661.html
-	client, _err := CreateClient(tea.String("LTAI4Z8PbGpCNTDd"), tea.String("uJxhprHgDlKx66tgOz0z8TZfCxzZyB"))
+	client, _err := CreateClient(tea.String("accessKey"), tea.String("secretKey"))
 	if _err != nil {
 		return _err
 	}
